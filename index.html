@@ -28,7 +28,7 @@
         <h3 class="card-text">Exactly what your taste buds need. Pizza Deli Pizza!</h3>
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-3">
       <div class="col-6">
         <h3>Welcome to Pizza Deli</h3>
         <p>Make an order of your favourite pizza(s) and wait as we prepare it for you with fresh ingredients from our
@@ -50,65 +50,83 @@
 
     </div>
 
+    <div class="flavor mt-3">
+      <select class="custom-select">
+        <option selected>Pizza Deli Menu</option>
+        <option value="1">Steak</option>
+        <option value="2">Chicken</option>
+        <option value="3">Mince meat</option>
+        <option value="4">Pineapple</option>
+      </select>
+    </div>
+    <p>Choose a pizza flavor from here:</p>
 
-    <p>Choose a pizza flavour from here:</p>
-    <select class="custom-select">
-      <option selected>Pizza Deli Menu</option>
-      <option value="1">Steak</option>
-      <option value="2">Chicken</option>
-      <option value="3">Mince meat</option>
-      <option value="4">Pineapple</option>
-    </select>
 
-    <p>Please choose the size of pizza you woud like to order. You can only pick one size at a time.</p>
-    <select class="custom-select">
-      <option selected>PiPizzazza Size Menu</option>
-      <option value="1">Small</option>
-      <option value="2">Medium</option>
-      <option value="3">Large</option>
-    </select>
-
-    <p>What kind of crust do you prefer? Kindly choose one from the list.</p>
-    <select class="custom-select">
-      <option selected>Pizza Crust Menu</option>
-      <option value="1">Crispy</option>
-      <option value="2">Stuffed</option>
-      <option value="3">Gluten-free</option>
-    </select>
-
-    <p>Want to add toppings? Choose from our toppings variety</p>
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-      <label class="form-check-label" for="inlineCheckbox1">Extra onions</label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-      <label class="form-check-label" for="inlineCheckbox2">Extra pineapple</label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-      <label class="form-check-label" for="inlineCheckbox3">Extra tomatoes</label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-      <label class="form-check-label" for="inlineCheckbox1">Extra sweetcorn</label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-      <label class="form-check-label" for="inlineCheckbox2">Extra Chicken</label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-      <label class="form-check-label" for="inlineCheckbox1">Extra boerewors</label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-      <label class="form-check-label" for="inlineCheckbox2">Extra Steak</label>
+    <div class="size mt-3">
+      <p>Please choose the size of pizza you woud like to order.</p>
+      <select class="custom-select">
+        <option selected>Pizza Size</option>
+        <option value="1">Small</option>
+        <option value="2">Medium</option>
+        <option value="3">Large</option>
+      </select>
     </div>
 
 
+    <div class="crust mt-3">
+      <p>What kind of crust do you prefer?</p>
+      <select class="custom-select">
+        <option selected>Pizza Crust</option>
+        <option value="1">Crispy</option>
+        <option value="2">Stuffed</option>
+        <option value="3">Gluten-free</option>
+      </select>
+    </div>
 
-    <div class="row">
+
+    <div class="toppings mt-3">
+      <p>Want to add toppings? Choose from our toppings variety:</p>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">Extra onions</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">Extra pineapple</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+        <label class="form-check-label" for="inlineCheckbox3">Extra tomatoes</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">Extra sweetcorn</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">Extra Chicken</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">Extra boerewors</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">Extra Steak</label>
+      </div>
+    </div>
+
+
+    <div class="delivery mt-3">
+      <p>Would you like your order to be delivered?</p>
+      <select class="custom-select">
+        <option selected>No</option>
+        <option value="1">Yes</option>
+      </select>
+    </div>
+
+
+    <div class="row mt-3">
       <div class="col-6">
         <div class="add-oder">
           <button class="btn btn-primary" type="submit">Add order</button>
@@ -119,10 +137,7 @@
           <button class="btn btn-primary" type="submit">Checkout</button>
         </div>
       </div>
-
     </div>
-
-
 
   </div>
 
