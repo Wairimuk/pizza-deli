@@ -6,4 +6,5 @@ $(document).ready(function () {
     this.pizzaCrust = crust;
     this.pizzaToppings = toppings;
   }
+  
 });
