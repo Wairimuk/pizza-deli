@@ -1,12 +1,12 @@
-# {Birthday Calculator}
+# {BPizza Deli}
 
-#### {A web page with a form that requires a user to fill in their date of brth and choose their gender.}, {2021}
+#### {A web page allows a user to order pizza and be charged for everything they order upon checkout.}, {2021}
 
 #### By **{Grace Wairimu Karuga}**
 
 ## Description
 
-{This webpage collects birth dates from users and calculates the day of the week when the user was born then uses this information together with gender to find out what their Akan name is.}
+{This website provides the user with select forms to select a pizza flavor, size, crust and toppings of their choice and charges them accordingly. A user is then able to see every item they ordered when they check out.}
 
 ## Setup/Installation Requirements
 
@@ -14,11 +14,12 @@
 
 ## Known Bugs
 
-{There are no known bugs.}
+{Prices for each item are not displayed as intended. They display as a string.}
+{The checkout and add order buttons do not work despite adding event listeners on JavaScript}
 
 ## Technologies Used
 
-{I used Bootstrap and JavaScript besides HMTL and CSS to come up with a webpage that collects birth dates from users and calculates the day of the week when the user was born.}
+{I used Bootstrap, JavaScript and jQuery besides HMTL and CSS to come up with a website to order and deliver pizza.}
 
 ## Support and contact details
 
