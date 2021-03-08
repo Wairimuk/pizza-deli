@@ -34,4 +34,17 @@ $(document).ready(function () {
     $("flavor#select-flavor").val("");
     $("size#select-size").val("");
   });
+
+  $(function () {
+    $("#select-size").change(function () {
+      let prices = {
+        Small: 400,
+        Medium: 600,
+        Large: 800,
+      };
+      let myJSON = JSON.stringify(prices);
+      $("input[name=amount1]").val(myJSON);
+      console.log($("input[name=amount1]").val(myJSON));
+    });
+  });
 });

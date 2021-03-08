@@ -9,10 +9,6 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/styles.css">
 
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="./js/scripts.js"></script>
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pizza Deli</title>
 </head>
@@ -20,7 +16,7 @@
 <body>
   <div class="container-fluid">
     <div class="card text-white text-center">
-      <img src="./images/logo.jpg" class="card-img" alt="Pizza photo">
+      <img src="./images/cheese-pizza.jpg" class="card-img" alt="Pizza photo">
       <div class="card-img-overlay">
         <h1 class="card-title">PIZZA DELI</h1>
         <h3 class="card-text">Enjoy delicious, tender, hot-from-the-pan pizza</h3>
@@ -28,7 +24,7 @@
       </div>
     </div>
 
-    <div class="form">
+    <form>
       <div class="row mt-3">
         <div class="col-6">
           <h3>Welcome to Pizza Deli</h3>
@@ -50,133 +46,29 @@
         </div>
       </div>
 
-      <div class="flavor mt-3">
-        <p>Please choose a flavour</p>
-        <div class="size mt-3">
-          <select class="custom-select">
-            <option selected>Pizza Deli Menu</option>
-            <option value="1" id="steak">Steak</option>
-            <option value="2" id="chicken">Chicken</option>
-            <option value="3" id="mince-meat">Mince meat</option>
-            <option value="4" id="pineapple">Pineapple</option>
-          </select>
-        </div>
+      <div class="flavor mt-3" id="select-flavor">
+        <p>Please choose a flavor</p>
+        <select class="custom-select">
+          <option selected>Pizza Deli Menu</option>
+          <option value="1" id="steak">Steak</option>
+          <option value="2" id="chicken">Chicken</option>
+          <option value="3" id="mince-meat">Mince meat</option>
+          <option value="4" id="pineapple">Pineapple</option>
+        </select>
       </div>
-
-      <!-- <div class="row mt-3">
-        <div class="col">
-          <div class="table-responsive">
-            <table class="table table-hover" id="size-table">
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Size</th>
-                  <th>Quantity</th>
-                  <th>Price</th>
-                  <th class="text-right">
-                    <span id="amount" class="amount">Amount</span>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="images">
-                      <div class="pizza-img">
-                        <img src="./images/images.jpeg" alt="Image pizza">
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <p>Small</p>
-                  </td>
-                  <td>
-                    <div class="button-container">
-                      <button class="cart-quantity-add" type="button" value="+">+</button>
-                      <input type="text" name="quantity" min="0" class="qty form-control" value="0" />
-                      <button class="cart-quantity-remove" type="button" value="-">-</button>
-                    </div>
-                  </td>
-                  <td>
-                    <input type="text" value="400" class="price form-control" disabled>
-                  </td>
-                  <td>Ksh <span id="amount" class="amount">0</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="images">
-                      <div class="pizza-img">
-                        <img src="./images/images.jpeg" alt="Image pizza">
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <p>Medium</p>
-                  </td>
-                  <td>
-                    <div class="button-container">
-                      <button class="cart-quantity-add" type="button" value="+">+</button>
-                      <input type="text" name="quantity" min="0" class="qty form-control" value="0" />
-                      <button class="cart-quantity-remove" type="button" value="-">-</button>
-                    </div>
-                  </td>
-                  <td>
-                    <input type="text" value="600" class="price form-control" disabled>
-                  </td>
-                  <td>Ksh <span id="amount" class="amount">0</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="images">
-                      <div class="pizza-img">
-                        <img src="./images/images.jpeg" alt="Image pizza">
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <p>Large</p>
-                  </td>
-                  <td>
-                    <div class="button-container">
-                      <button class="cart-quantity-add" type="button" value="+">+</button>
-                      <input type="text" name="quantity" min="0" class="qty form-control" value="0" />
-                      <button class="cart-quantity-remove" type="button" value="-">-</button>
-                    </div>
-                  </td>
-                  <td>
-                    <input type="text" value="800" class="price form-control" disabled>
-                  </td>
-                  <td>Ksh <span id="amount" class="amount">0</span>
-                  </td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td colspan="4"></td>
-                  <td>
-                    <strong>Total = Ksh <span class="total">0</span>
-                    </strong>
-                  </td>
-                </tr>
-              </tfoot>
-            </table>
-          </div>
-        </div>
-      </div> -->
 
       <div class="size" mt-3>
         <p>Please choose the size of pizza you woud like to order.</p>
-        <select class="custom-select">
+        <select class="custom-select" id="select-size">
           <option selected>Pizza Size</option>
           <option value="1" id="small">Small</option>
           <option value="2" id="medium">Medium</option>
           <option value="3" id="large">Large</option>
         </select>
+        <input name="amount1" value="" readonly="readonly" />
       </div>
 
-      <div class="crust mt-3">
+      <div class="crust mt-3" id="select-crust">
         <p>What kind of crust do you prefer?</p>
         <select class="custom-select">
           <option selected>Pizza Crust</option>
@@ -186,110 +78,7 @@
         </select>
       </div>
 
-      <!-- <div class="row mt-3">
-        <div class="col">
-          <div class="table-responsive">
-            <table class="table table-hover" id="crust-table">
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Crust</th>
-                  <th>Quantity</th>
-                  <th>Price</th>
-                  <th class="text-right">
-                    <span id="amount" class="amount">Amount</span>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="images">
-                      <div class="pizza-img">
-                        <img src="./images/images.jpeg" alt="Image pizza">
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <p>Crispy</p>
-                  </td>
-                  <td>
-                    <div class="button-container">
-                      <button class="cart-quantity-add" type="button" value="+">+</button>
-                      <input type="text" name="quantity" min="0" class="qty form-control" value="0" />
-                      <button class="cart-quantity-remove" type="button" value="-">-</button>
-                    </div>
-                  </td>
-                  <td>
-                    <input type="text" value="100" class="price form-control" disabled>
-                  </td>
-                  <td>Ksh <span id="amount" class="amount">0</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="images">
-                      <div class="pizza-img">
-                        <img src="./images/images.jpeg" alt="Image pizza">
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <p>Stuffed</p>
-                  </td>
-                  <td>
-                    <div class="button-container">
-                      <button class="cart-quantity-add" type="button" value="+">+</button>
-                      <input type="text" name="quantity" min="0" class="qty form-control" value="0" />
-                      <button class="cart-quantity-remove" type="button" value="-">-</button>
-                    </div>
-                  </td>
-                  <td>
-                    <input type="text" value="150" class="price form-control" disabled>
-                  </td>
-                  <td>Ksh <span id="amount" class="amount">0</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="images">
-                      <div class="pizza-img">
-                        <img src="./images/images.jpeg" alt="Image pizza">
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <p>Gluten-free</p>
-                  </td>
-                  <td>
-                    <div class="button-container">
-                      <button class="cart-quantity-add" type="button" value="+">+</button>
-                      <input type="text" name="quantity" min="0" class="qty form-control" value="0" />
-                      <button class="cart-quantity-remove" type="button" value="-">-</button>
-                    </div>
-                  </td>
-                  <td>
-                    <input type="text" value="200" class="price form-control" disabled>
-                  </td>
-                  <td>Ksh <span id="amount" class="amount">0</span>
-                  </td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td colspan="4"></td>
-                  <td>
-                    <strong>Total = Ksh <span class="total">0</span>
-                    </strong>
-                  </td>
-                </tr>
-              </tfoot>
-            </table>
-          </div>
-        </div>
-      </div> -->
-
-      <div class="toppings mt-3">
+      <div class="toppings mt-3" select-topping>
         <p>Want to add toppings? Choose from our toppings variety:</p>
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option2">
@@ -330,11 +119,17 @@
           </div>
         </div>
       </div>
-    </div>
+    </form>
+    <h2>Your Cart</h2>
+    <ul id="cart">
+
+    </ul>
 
   </div>
 
-
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="./js/scripts.js"></script>
 </body>
 
 </html>

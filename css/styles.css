@@ -5,26 +5,3 @@
 .container-fluid {
   background-color: wheat;
 }
-
-/* .button-container {
-  display: flex;
-  align-items: center;
-}
-.button-container .form-control {
-  width: 0%;
-  text-align: center;
-  display: inline-block;
-  margin: 0px 5px;
-}
-.cart-quantity-add {
-  background-color: deepskyblue;
-}
-.cart-quantity-remove {
-  background-color: red;
-}
-.pizza-img {
-  width: 50%;
-  height: 50%;
-  border-radius: 4px;
-  background-color: mediumturquoise;
-} */
