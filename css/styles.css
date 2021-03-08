@@ -1,4 +1,12 @@
-.button-container {
+.card img {
+  width: 100%;
+  height: 100%;
+}
+.container-fluid {
+  background-color: wheat;
+}
+
+/* .button-container {
   display: flex;
   align-items: center;
 }
@@ -19,4 +27,4 @@
   height: 50%;
   border-radius: 4px;
   background-color: mediumturquoise;
-}
+} */
