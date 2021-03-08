@@ -33,32 +33,16 @@ $(document).ready(function () {
     );
     $("flavor#select-flavor").val("");
     $("size#select-size").val("");
-  });
 
-  $(function () {
-    $("#select-size").change(function () {
-      let prices = {
-        small: 400,
-        medium: 600,
-        large: 800,
-      };
-      // let myJSON = JSON.stringify(prices);
-      $("input[name=amount1]").val(prices.small, prices.medium, prices.large);
-      console.log(
-        $("input[name=amount1]").val(prices.small, prices.medium, prices.large)
-      );
+    $(function () {
+      $("#select-size").change(function () {
+        let prices = {
+          small: 400,
+          medium: 600,
+          large: 800,
+        };
+        $("input[name=amount1]").val(prices.small, prices.medium, prices.large);
+      });
     });
   });
-  // $(function () {
-  //   $("#select-crust").change(function () {
-  //     let prices = {
-  //       crispy: 50,
-  //       stuffed: 100,
-  //       "Gluten-free": 150,
-  //     };
-  //     let myJSON = JSON.stringify(prices);
-  //     $("input[name=amount1]").val(prices.crispy, prices.stuffed);
-  //     console.log($("input[name=amount2]").val(myJSON));
-  //   });
-  // });
 });
