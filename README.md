@@ -1,6 +1,6 @@
-# {BPizza Deli}
+# {Pizza Deli}
 
-#### {A web page allows a user to order pizza and be charged for everything they order upon checkout.}, {2021}
+#### {A website that allows a user to order pizza and be charged for everything they order upon checkout.}, {2021}
 
 #### By **{Grace Wairimu Karuga}**
 
@@ -15,7 +15,7 @@
 ## Known Bugs
 
 {Prices for each item are not displayed as intended. They display as a string.}
-{The checkout and add order buttons do not work despite adding event listeners on JavaScript}
+{The checkout button does not work despite adding an event listener on JavaScript}
 
 ## Technologies Used
 
