@@ -47,4 +47,16 @@ $(document).ready(function () {
       console.log($("input[name=amount1]").val(myJSON));
     });
   });
+  $(function () {
+    $("#select-crust").change(function () {
+      let prices = {
+        crispy: 50,
+        Medium: 100,
+        Large: 150,
+      };
+      let myJSON = JSON.stringify(prices);
+      $("input[name=amount1]").val(myJSON);
+      console.log($("input[name=amount2]").val(myJSON));
+    });
+  });
 });
