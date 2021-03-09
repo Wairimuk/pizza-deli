@@ -6,12 +6,14 @@ $(document).ready(function () {
     this.crust = crust;
     this.toppings = toppings;
   }
-  // Pizza.prototype.pizzaOrder = function () {
-  //   return (
-  //     this.Flavor + this.Size + this.Crust + this.Toppings
-  //   );
-  // };
+  Pizza.prototype.pizzaOrder = function () {
+    return this.Flavor + this.Size + this.Crust + this.Toppings;
+  };
   // UI Logic
+  $("#add-address").click(function () {
+    $("#add-addresses").show();
+  });
+
   $(document).submit(function (event) {
     event.preventDefault();
 
@@ -33,16 +35,18 @@ $(document).ready(function () {
     );
     $("flavor#select-flavor").val("");
     $("size#select-size").val("");
+    $("flavor#select-crust").val("");
+    $("size#select-topping").val("");
+    $("input.new-street").val("");
+    $("input.new-city").val("");
 
-    $(function () {
-      $("#select-size").change(function () {
-        let prices = {
-          small: 400,
-          medium: 600,
-          large: 800,
-        };
-        $("input[name=amount1]").val(prices.small, prices.medium, prices.large);
-      });
-    });
+    // $(function () {
+    //   $("#select-size").change(function () {
+    //     let prices = {
+    //       small: 400,
+    //       medium: 600,
+    //       large: 800,
+    //     };
+    //     $("input[name=amount1]").val(prices.small, prices.medium, prices.large);
   });
 });
